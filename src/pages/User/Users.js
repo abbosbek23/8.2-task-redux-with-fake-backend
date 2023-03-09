@@ -48,9 +48,9 @@ function Userss({func1, users, SaveUser, EditUser, DeleteUser}) {
                 </thead>
                 <tbody>
                 {
-                  users.map((item,)=>
+                  users.map((item,index)=>
                       <tr key={item.id}>
-                          <td>{item.id}</td>
+                          <td>{index+1}</td>
                           <td>{item.name}</td>
                           <td>{item.username}</td>
                           <td>{item.email}</td>

@@ -12,7 +12,7 @@ const slice = createSlice({
             state.users = action.payload
         },
         UserSaved: (state, action) => {
-            state.users = (action.payload)
+            state.users.push(action.payload)
             toast.success('User saved good :)')
         },
         EditUser: (state,action) => {

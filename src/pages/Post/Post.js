@@ -49,9 +49,9 @@ function Post({posts, func1, SavePost, EditPost, DeletePost}) {
                     </thead>
                     <tbody>
                     {
-                        posts.map((item,) =>
+                        posts.map((item,index) =>
                             <tr key={item.id}>
-                                <td>{item.id}</td>
+                                <td>{index+1}</td>
                                 <td>{item.title}</td>
                                 <td>{item.body}</td>
                                 <td>
