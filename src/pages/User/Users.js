@@ -19,9 +19,9 @@ function Userss({func1, users, SaveUser, EditUser, DeleteUser}) {
 
     function SubmitUser(event, errors, values){
         if (currentItem){
-            EditUser({...values, id:currentItem.id})
+            EditUser({...event, id:currentItem.id})
         }else {
-            SaveUser(values)
+            SaveUser(event)
         }
         toggle()
     }

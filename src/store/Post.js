@@ -13,7 +13,7 @@ const slice = createSlice({
             state.posts = action.payload
         },
         PostSaved: (state, action) => {
-            state.posts.push(action.payload)
+            state.posts.unshift(action.payload)
             toast.success('Post saved good :)')
         },
         editPost: (state,action)=>{

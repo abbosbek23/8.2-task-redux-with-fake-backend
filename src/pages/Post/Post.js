@@ -20,9 +20,9 @@ function Post({posts, func1, SavePost, EditPost, DeletePost}) {
 
     function SubmitPost(event, errors, values) {
         if (currentItem){
-            EditPost({...values, id:currentItem.id})
+            EditPost({...event, id:currentItem.id})
         }else {
-            SavePost(values)
+            SavePost(event)
         }
         toggle()
     }
