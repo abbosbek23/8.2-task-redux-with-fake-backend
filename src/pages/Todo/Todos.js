@@ -17,9 +17,6 @@ useEffect(() => {
                 <th>N</th>
                 <th>Title</th>
                 <th>Active</th>
-                <th>Salom</th>
-                <th>Salomss</th>
-                <th>asdas</th>
                 </tr>
             </thead>
             <tbody>
